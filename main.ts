@@ -1,12 +1,12 @@
-cuteBot.IR_callback(function on_ir_callback(serv1: number) {
+cuteBot.IR_callback(function (serv1) {
     console.log("serv")
-    basic.showNumber(serv1)
+basic.showNumber(serv1)
     console.log(serv1)
+led.plot(2, 2)
 })
 led.unplot(2, 3)
-basic.forever(function on_forever() {
+basic.forever(function () {
     if (cuteBot.IR_Button(cuteBot.IRButtons.Two)) {
         led.plot(2, 3)
     }
-    
 })

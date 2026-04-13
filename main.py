@@ -2,7 +2,7 @@ def on_ir_callback(serv1):
     print("serv")
     basic.show_number(serv1)
     print(serv1)
-    
+    led.plot(2, 2)
 cuteBot.IR_callback(on_ir_callback)
 
 led.unplot(2, 3)
